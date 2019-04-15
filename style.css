@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'PokemonHollow';
+    src: url(PokemonHollow.ttf) format('truetype');
+    font-family: 'pokeTexto';
+    src: url(pokeTexto.ttf) format('truetype');
+}
+
+.startText {
+    margin: auto;
+    display: table;
+}
+
+.startText p {
+    font-family: 'pokeTexto';
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    display: table-cell;
+}
+
+.startText div {
+    display: table-cell;
+}
+
+body {
+    background-color: black;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pokeball {
+    width: 400px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#pokeball:hover {
+    animation-name: girar;
+    animation-duration: 1s;
+}
+
+@keyframes girar {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.pokeballTop {
+    width: 300px;
+    height: 150px;
+    background-color: red;
+    border-radius: 158px 158px 0 0;
+    border: 8px solid #000000;
+    margin: auto;
+}
+
+.pokeballCenter {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 41px;
+    border: 6px solid #000000;
+    position: absolute;
+    margin-left: 159px;
+    margin-top: -41px;
+}
+
+.pokeballInnerCenter {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 28px;
+    border: 3px solid #000000;
+    position: absolute;
+    margin-left: 7px;
+    margin-top: 7px;
+}
+
+.pokeballBot {
+    width: 300px;
+    height: 150px;
+    background-color: white;
+    border-radius: 0 0 158px 158px;
+    margin: auto;
+    border: 8px solid #000000;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-top: 15px solid red;
+    border-right: 8px solid transparent;
+    animation-name: subirBajar;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes subirBajar {
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
